@@ -15,6 +15,7 @@ services:
       #TZ: 'America/Chicago'
       TZ: 'Japan'
       # WEBPASSWORD: 'set a secure password here or it will be random'
+      PIHOLE_DNS_: '1.1.1.1;8.8.8.8'
     # Volumes store your data between container upgrades
     volumes:
       - './etc-pihole:/etc/pihole'
